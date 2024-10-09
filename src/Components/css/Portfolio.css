@@ -1,0 +1,155 @@
+/* Import Slick Carousel styles */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Portfolio Styles */
+.portfolio {
+    padding-top: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+    position: relative; /* To position custom buttons */
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .portfolio-slider .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio-slide {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  
+  .portfolio-image {
+    width: 60%; /* Adjust size */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-info {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+  }
+  
+  .portfolio-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-link {
+    display: inline-block;
+    font-size: 1rem;
+    color: #00aaff;
+    text-decoration: none;
+  }
+  
+  .portfolio-link:hover {
+    text-decoration: underline;
+  }
+  
+  .custom-buttons {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-prev,
+  .custom-next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .custom-prev:hover,
+  .custom-next:hover {
+    background-color: #555;
+  }
+
+  
+
+/* CSS */
+.button-prev, .button-next {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute; /* Ensure buttons are positioned absolutely */
+    bottom: 10px; /* Adjust for spacing from the bottom edge */
+  }
+  
+  .button-prev {
+    left: 20px; /* Adjust for spacing from the left edge */
+  }
+  
+  .button-next {
+    right: 20px; /* Adjust for spacing from the right edge */
+  }
+  
+  .button-prev:hover, .button-next:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .button-prev:focus, .button-next:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+  }
+  
